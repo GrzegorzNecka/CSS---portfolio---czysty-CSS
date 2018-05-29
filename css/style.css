@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -75,7 +79,7 @@ h1 {
     font-weight: 300;
 }
 
-
+/*omnie*/
 
 section.omnie {
     -webkit-box-shadow: 0px 10px 2px 0px rgba(224, 221, 224, 1);
@@ -103,6 +107,7 @@ h2.title-h2 {
     text-align: center;
     margin: 0;
     padding: 0;
+    height:
 }
 
 
@@ -112,6 +117,7 @@ section .omnie-img {
     height: 100%;
     border: solid 5px white;
     box-sizing: border-box;
+
 }
 
 section .omnie-txt {
@@ -128,7 +134,7 @@ section .omnie-txt {
     padding: 2% 0;
 }
 
-/*umiejętnośc*/
+/*skills*/
 
 section.skills {
     text-align: center;
@@ -142,8 +148,7 @@ article.skills-txt {
 
 
 .skills-img {
-    width: auto;
-    height: auto;
+
     display: inline-block;
 }
 
@@ -156,78 +161,164 @@ figcaption {
 
 section.portfolio {
     text-align: center;
-}
+    margin: auto;
 
-
-.port-center{
-    width:90%; 
-    display: inline-block;
+    overflow: hidden;
 
 }
 
-article.portfolio{
-display:inline-block; 
-width: 250px;
-height: 250px;
-background-color: red;
-
-
+section {
+    padding: 5%;
 }
 
 
-
-/*
-div.center-portfolio {
-    width: 90%;
-    display: inline-block;
-    margin: 0 20px;
-    font-size: 0;
-}
 
 article.portfolio {
     display: inline-block;
     height: 350px;
-    width: 350px;
-    margin: 0;
-    position: relative;
-    text-align: center;
+    width: 33.3333%;
+    float: left;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover
 }
 
-article.item-1 {
+.port1 {
     background-image: url(../portfolio-grafiki/img/portfolio1.jpg)
 }
 
-article.item-2 {
+.port2 {
     background-image: url(../portfolio-grafiki/img/portfolio2.jpg)
 }
 
-article.item-3 {
+.port3 {
     background-image: url(../portfolio-grafiki/img/portfolio4.jpg)
 }
 
+article.portfolio:hover .maska {
+    opacity: 1;
+}
 
-.overflow {
+
+.maska {
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    background-color: rgba(43, 74, 100, 0.8);
+    transition: all 0.4s;
+}
+
+.border {
+
+    border: 1px solid #fff;
+    height: 100%;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    height: 90%;
-    width: 90%;
-    background-color: rgba(0, 0, 70, 0.5);
-    z-index: 1;
-    margin: 0;
-    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
 
-article.portfolio>div>p {
-    color: white;
-    border: solid, 1px, #fff;
-    z-index: 1;
-    font-size: 16px;
-    margin: 0;
+.toggle,
+#drop {
+    display: none;
+}
+
+.content p {
+    color: #fff;
+}
+
+/*-----------------footer*/
+
+section#footer {
+
+
+    margin: auto;
+    color: #fff;
+    background-color: #213b50;
+    padding: 5%;
+}
+
+.info,
+.form {
+
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/*prawa strona*/
+
+input:not([type="submit"]) {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #2b4a64;
+    border: 1px solid #2b4a64;
+    color: #fff;
+    padding: 5px;
+}
+
+
+input[type="submit"] {
+    width: 20%;
+    background-color: greenyellow;
+    border: none;
+    height: 40px;
+    float: right;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+/*lewa strona*/
+
+section#footer > div.info > h2 {
     padding: 0;
-    top:50%;
-    left:50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+    text-align: left;
 
 }
-*/
+
+section#footer > div.info > p {
+    color: #fff;
+}
+
+section#footer > div.info > .social a {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    margin: 0 20px 0 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.4s;
+    font-size: 20px;
+}
+
+section#footer > div.info > .social a:hover {
+    color: #2b4a64;
+    background: white;
+}
+
+footer#foo {
+    background-color: #142634;
+    padding: 0 5%;
+}
+
+footer#foo > p {
+    margin: 0;
+    color: #fff;
+}

@@ -1,0 +1,52 @@
+@media all and (max-width: 992px) {
+    .omnie-figure,
+    section .omnie-img,
+    section .omnie-txt {
+        width: 100%;
+    }
+
+    article.portfolio {
+        width: 100%;
+    }
+    .info,
+    .form {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    section#footer > div.info > .social a {
+        margin-bottom: 20px;
+    }
+
+    section#footer > div.info > h2 {
+        text-align: center;
+    }
+    /* men rwd*/
+    .toggle {
+        display: block;
+        text-align: right;
+        color: limegreen;
+        margin: 20px
+    }
+    .nav-ul {
+        display: none;
+    }
+
+    .nav #drop:checked + ul {
+        display: block;
+
+    }
+
+    .nav .nav-li {
+        display: block;
+        margin-right: 20px;
+    }
+
+
+
+}
+
+@media all and (max-width: 768px) {}
+
+@media all and (max-width: 780px) {}
